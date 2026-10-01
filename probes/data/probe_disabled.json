@@ -1,0 +1,47 @@
+[
+ {
+  "variant": "native_disabled_no_listener",
+  "offered_to_agent": false,
+  "llm_line": "Submit order"
+ },
+ {
+  "variant": "native_disabled_onclick_attr",
+  "offered_to_agent": true,
+  "llm_line": "[11]<button id=t disabled=true />",
+  "click_error": null,
+  "click_reported": "Clicked button \"Submit order\" id=t",
+  "handler_ran": false
+ },
+ {
+  "variant": "native_disabled_addEventListener",
+  "offered_to_agent": true,
+  "llm_line": "[24]<button id=t disabled=true />",
+  "click_error": null,
+  "click_reported": "Clicked button \"Submit order\" id=t",
+  "handler_ran": false
+ },
+ {
+  "variant": "aria_disabled_with_listener",
+  "offered_to_agent": true,
+  "llm_line": "[39]<div id=t role=button disabled=true />",
+  "click_error": null,
+  "click_reported": "Clicked div role=button \"Submit order\" id=t",
+  "handler_ran": false
+ },
+ {
+  "variant": "enabled_control",
+  "offered_to_agent": true,
+  "llm_line": "[54]<button id=t />",
+  "click_error": null,
+  "click_reported": "Clicked button \"Submit order\" id=t",
+  "handler_ran": true
+ },
+ {
+  "variant": "disabled_input_with_listener",
+  "offered_to_agent": true,
+  "llm_line": "|SHADOW(open)|[67]<input id=t value=x disabled=true />",
+  "click_error": null,
+  "click_reported": "Clicked input id=t",
+  "handler_ran": false
+ }
+]

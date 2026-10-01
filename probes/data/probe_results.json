@@ -1,0 +1,127 @@
+[
+ {
+  "name": "click covered by cookie overlay",
+  "note": "target #buy not in selector map (not offered to the agent)"
+ },
+ {
+  "name": "click disabled button",
+  "action": "click",
+  "kwargs": {},
+  "claim": {
+   "error": null,
+   "extracted_content": "Clicked button \"Submit order\" id=b",
+   "long_term_memory": null
+  },
+  "reality": null,
+  "action_really_happened": false,
+  "SILENT_SUCCESS": true
+ },
+ {
+  "name": "input into readonly field",
+  "action": "input",
+  "kwargs": {
+   "text": "hello"
+  },
+  "claim": {
+   "error": null,
+   "extracted_content": "Typed 'hello'\n\u26a0\ufe0f Note: the field's actual value '' differs from typed text 'hello'. The page may have reformatted or autocompleted your input.",
+   "long_term_memory": "Typed 'hello'\n\u26a0\ufe0f Note: the field's actual value '' differs from typed text 'hello'. The page may have reformatted or autocompleted your input."
+  },
+  "reality": "",
+  "action_really_happened": false,
+  "SILENT_SUCCESS": true
+ },
+ {
+  "name": "input into disabled field",
+  "note": "target #f not in selector map (not offered to the agent)"
+ },
+ {
+  "name": "input longer than maxlength",
+  "action": "input",
+  "kwargs": {
+   "text": "1234567890"
+  },
+  "claim": {
+   "error": null,
+   "extracted_content": "Typed '1234567890'\n\u26a0\ufe0f Note: the field's actual value '12345' differs from typed text '1234567890'. The page may have reformatted or autocompleted your input.",
+   "long_term_memory": "Typed '1234567890'\n\u26a0\ufe0f Note: the field's actual value '12345' differs from typed text '1234567890'. The page may have reformatted or autocompleted your input."
+  },
+  "reality": "12345",
+  "action_really_happened": false,
+  "SILENT_SUCCESS": true
+ },
+ {
+  "name": "input rewritten by page JS",
+  "action": "input",
+  "kwargs": {
+   "text": "ab12cd"
+  },
+  "claim": {
+   "error": null,
+   "extracted_content": "Typed 'ab12cd'\n\u26a0\ufe0f Note: the field's actual value '12' differs from typed text 'ab12cd'. The page may have reformatted or autocompleted your input.",
+   "long_term_memory": "Typed 'ab12cd'\n\u26a0\ufe0f Note: the field's actual value '12' differs from typed text 'ab12cd'. The page may have reformatted or autocompleted your input."
+  },
+  "reality": "12",
+  "action_really_happened": false,
+  "SILENT_SUCCESS": true
+ },
+ {
+  "name": "select disabled option",
+  "action": "select_dropdown",
+  "kwargs": {
+   "text": "Express"
+  },
+  "claim": {
+   "error": null,
+   "extracted_content": "Selected option: Express (value: b)",
+   "long_term_memory": "Selected dropdown option 'Express' at index 83"
+  },
+  "reality": "b",
+  "action_really_happened": true,
+  "SILENT_SUCCESS": false
+ },
+ {
+  "name": "select reset by onchange",
+  "action": "select_dropdown",
+  "kwargs": {
+   "text": "Express"
+  },
+  "claim": {
+   "error": null,
+   "extracted_content": "Available dropdown options  are:\n- Standard\n- Express",
+   "long_term_memory": "Couldn't select the dropdown option as 'Express' is not one of the available options."
+  },
+  "reality": "a",
+  "action_really_happened": false,
+  "SILENT_SUCCESS": true
+ },
+ {
+  "name": "scroll page that cannot scroll",
+  "action": "scroll",
+  "kwargs": {
+   "down": true,
+   "pages": 1
+  },
+  "claim": {
+   "error": null,
+   "extracted_content": "\ud83d\udd0d Scrolled down 1440px",
+   "long_term_memory": "Scrolled down 1440px"
+  },
+  "reality": 0,
+  "action_really_happened": false,
+  "SILENT_SUCCESS": true
+ },
+ {
+  "name": "go_back with no history",
+  "action": "go_back",
+  "kwargs": {},
+  "claim": {
+   "error": null,
+   "extracted_content": "Navigated back",
+   "long_term_memory": null
+  },
+  "reality": "/select_reset",
+  "action_really_happened": true,
+  "SILENT_SUCCESS": false
+ }
+]

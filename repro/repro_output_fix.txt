@@ -1,0 +1,3 @@
+error:             Cannot click element (index=3): it is disabled. Complete whatever enables it first (for example required fields or checkboxes).
+extracted_content: None
+handler ran:       False
