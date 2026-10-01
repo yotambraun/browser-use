@@ -1,0 +1,6 @@
+{
+ "fix_present": true,
+ "error": "Cannot click element (index=4): it is disabled. Complete whatever enables it first (for example required fields or checkboxes).",
+ "extracted_content": null,
+ "page_status_after": ""
+}

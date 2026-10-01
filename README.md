@@ -17,6 +17,12 @@ errors". Base: browser-use `main` at 4cbe921 (0.13.10). Fix: branch `fix/click-d
 The agent runs show the fix does not change normal flows and that the situation occurs; the sample is too small to
 claim a difference in outcomes, and none is claimed.
 
+## Demo
+
+![click on a disabled button: main vs fix](demo/demo_click_disabled.png)
+
+Captured from both builds with `demo/demo_capture.py` (raw results in `demo/main_result.json`, `demo/fix_result.json`).
+
 ## Contents
 
 - `repro/`: minimal reproduction (no LLM) and its output on both builds.
