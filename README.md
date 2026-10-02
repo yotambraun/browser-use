@@ -1,6 +1,6 @@
 # Evidence: `click` reports success on disabled form controls
 
-Supporting material for the browser-use issue and PR "fix(click): report clicks on disabled form controls as
+Supporting material for browser-use issue #5964 and PR #5965 "fix(click): report clicks on disabled form controls as
 errors". Base: browser-use `main` at 4cbe921 (0.13.10). Fix: branch `fix/click-disabled-elements`.
 
 ## Summary
@@ -9,8 +9,8 @@ errors". Base: browser-use `main` at 4cbe921 (0.13.10). Fix: branch `fix/click-d
 | --- | --- | --- |
 | `click` on `<button disabled>` with a click listener ([repro](repro/repro_disabled_click.py)) | `error=None`, `Clicked button "Place order"`, handler did not run | `error="Cannot click element (index=3): it is disabled. ..."` |
 | Same with a disabled Vue 3 (`@click`) and React 18 (`onClick`) button ([probe](probes/probe_frameworks.py)) | reported as clicked | error |
-| New tests `tests/ci/test_click_disabled_element.py` (5) | 2 fail (`error=None`) | 5 pass |
-| Full `tests/ci` | | 1208 passed, 35 skipped |
+| New tests `tests/ci/test_click_disabled_element.py` (9) | 5 fail (`error=None`; the multi_act test runs all 3 queued actions) | 9 pass |
+| Full `tests/ci` | | 1212 passed, 35 skipped |
 | Agent runs, requirement visible on the page (36) | 18/18 orders | 18/18 orders, same number of actions |
 | Agent runs, button enabled 1.5 s after typing (24) | 10/12 orders; the click on the still-disabled button returns `Clicked ...` | 11/12 orders; 7/12 runs got the new error |
 
