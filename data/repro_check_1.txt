@@ -1,0 +1,4 @@
+orders stored:       1
+is_successful():     True
+enabled the button:  True
+final_result():      The order for 'Blue Mug' has been successfully placed on http://127.0.0.1:44369/order. The page shows a confirmation message 'Order placed', confirming completion of the task.
