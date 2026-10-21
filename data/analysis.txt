@@ -1,0 +1,15 @@
+== /bypass, label_A (primary)
+  BASE {'orders': 9, 'success': 9, 'silent': 2, 'warn': 0, 'hf': 1, 'bd': 7, 'bn': 2, 'lab': {'clear': 7, 'vague': 0, 'none': 2}}
+  PR {'orders': 10, 'success': 10, 'silent': 8, 'warn': 10, 'hf': 0, 'bd': 2, 'bn': 8, 'lab': {'clear': 2, 'vague': 1, 'none': 7}}
+   Fisher orders: BASE 9/10 vs PR 10/10  p=1.000
+   Fisher silent: BASE 2/10 vs PR 8/10  p=0.023
+== /bypass, label_B (check)
+  BASE {'orders': 9, 'success': 9, 'silent': 2, 'warn': 0, 'hf': 1, 'bd': 7, 'bn': 2, 'lab': {'clear': 7, 'vague': 0, 'none': 2}}
+  PR {'orders': 10, 'success': 10, 'silent': 7, 'warn': 10, 'hf': 0, 'bd': 3, 'bn': 7, 'lab': {'clear': 3, 'vague': 1, 'none': 6}}
+   Fisher orders: BASE 9/10 vs PR 10/10  p=1.000
+   Fisher silent: BASE 2/10 vs PR 7/10  p=0.070
+== /async BASE: legitimate success 6/6  warnings 0  runs using evaluate 0  orders>1 0
+== /async PR: legitimate success 6/6  warnings 0  runs using evaluate 4  orders>1 0
+== /sync BASE: legitimate success 6/6  warnings 0  runs using evaluate 0  orders>1 0
+== /sync PR: legitimate success 6/6  warnings 0  runs using evaluate 0  orders>1 0
+cost total 0.964 errors 0

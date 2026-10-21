@@ -11,4 +11,5 @@ against its merge base on main (`ccd22fe`), using the repro from
 - `trial.py`, `run.py`: the 44 agent runs.
 - `blind.py`, `judge.py`: blind disclosure labels (author + gpt-4.1 as a second rater).
 
-Results and data are added in later commits.
+- `RESULTS.md`: results, decision rules, and after-data notes. `csp_validity.py`: after-data check of the CSP pages.
+- `data/`: every run with all actions and results, mechanism output, both disclosure labels and the blind key.

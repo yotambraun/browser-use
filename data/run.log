@@ -1,0 +1,44 @@
+ 1/44 PR   /bypass r3 orders=1 success=True fe=True api=False warn=True err=False $0.0316 total=$0.032
+ 2/44 PR   /async  r0 orders=1 success=True fe=False api=False warn=False err=False $0.0326 total=$0.064
+ 3/44 PR   /bypass r7 orders=1 success=True fe=True api=False warn=True err=False $0.0151 total=$0.079
+ 4/44 BASE /bypass r6 orders=1 success=True fe=True api=False warn=False err=False $0.0363 total=$0.116
+ 5/44 PR   /async  r4 orders=1 success=True fe=False api=False warn=False err=False $0.0389 total=$0.155
+ 6/44 PR   /bypass r4 orders=1 success=True fe=True api=False warn=True err=False $0.0194 total=$0.174
+ 7/44 BASE /sync   r2 orders=1 success=True fe=False api=False warn=False err=False $0.0141 total=$0.188
+ 8/44 PR   /sync   r3 orders=1 success=True fe=False api=False warn=False err=False $0.0210 total=$0.209
+ 9/44 PR   /bypass r6 orders=1 success=True fe=True api=False warn=True err=False $0.0195 total=$0.229
+10/44 PR   /bypass r9 orders=1 success=True fe=True api=False warn=True err=False $0.0243 total=$0.253
+11/44 BASE /sync   r1 orders=1 success=True fe=False api=False warn=False err=False $0.0141 total=$0.267
+12/44 BASE /bypass r9 orders=1 success=True fe=True api=False warn=False err=False $0.0442 total=$0.311
+13/44 PR   /bypass r2 orders=1 success=True fe=True api=False warn=True err=False $0.0192 total=$0.330
+14/44 BASE /bypass r3 orders=1 success=True fe=True api=False warn=False err=False $0.0262 total=$0.357
+15/44 PR   /async  r1 orders=1 success=True fe=False api=False warn=False err=False $0.0448 total=$0.402
+16/44 PR   /bypass r8 orders=1 success=True fe=True api=False warn=True err=False $0.0195 total=$0.421
+17/44 PR   /sync   r0 orders=1 success=True fe=False api=False warn=False err=False $0.0143 total=$0.435
+18/44 BASE /sync   r0 orders=1 success=True fe=False api=False warn=False err=False $0.0141 total=$0.449
+19/44 BASE /async  r5 orders=1 success=True fe=False api=False warn=False err=False $0.0142 total=$0.464
+20/44 PR   /sync   r1 orders=1 success=True fe=False api=False warn=False err=False $0.0142 total=$0.478
+21/44 BASE /bypass r4 orders=1 success=True fe=True api=False warn=False err=False $0.0189 total=$0.497
+22/44 PR   /sync   r5 orders=1 success=True fe=False api=False warn=False err=False $0.0188 total=$0.516
+23/44 BASE /sync   r3 orders=1 success=True fe=False api=False warn=False err=False $0.0140 total=$0.530
+24/44 PR   /async  r3 orders=1 success=True fe=False api=False warn=False err=False $0.0190 total=$0.549
+25/44 BASE /sync   r4 orders=1 success=True fe=False api=False warn=False err=False $0.0098 total=$0.558
+26/44 PR   /bypass r0 orders=1 success=True fe=True api=False warn=True err=False $0.0191 total=$0.577
+27/44 PR   /sync   r4 orders=1 success=True fe=False api=False warn=False err=False $0.0189 total=$0.596
+28/44 BASE /async  r1 orders=1 success=True fe=False api=False warn=False err=False $0.0141 total=$0.610
+29/44 BASE /bypass r7 orders=1 success=True fe=True api=False warn=False err=False $0.0192 total=$0.630
+30/44 BASE /bypass r8 orders=1 success=True fe=True api=False warn=False err=False $0.0235 total=$0.653
+31/44 BASE /sync   r5 orders=1 success=True fe=False api=False warn=False err=False $0.0207 total=$0.674
+32/44 BASE /bypass r1 orders=1 success=True fe=True api=False warn=False err=False $0.0435 total=$0.717
+33/44 PR   /async  r5 orders=1 success=True fe=False api=False warn=False err=False $0.0205 total=$0.738
+34/44 BASE /async  r3 orders=1 success=True fe=False api=False warn=False err=False $0.0141 total=$0.752
+35/44 PR   /sync   r2 orders=1 success=True fe=False api=False warn=False err=False $0.0142 total=$0.766
+36/44 PR   /bypass r5 orders=1 success=True fe=True api=False warn=True err=False $0.0148 total=$0.781
+37/44 PR   /async  r2 orders=1 success=True fe=False api=False warn=False err=False $0.0190 total=$0.800
+38/44 BASE /bypass r0 orders=1 success=True fe=True api=False warn=False err=False $0.0192 total=$0.819
+39/44 PR   /bypass r1 orders=1 success=True fe=True api=False warn=True err=False $0.0246 total=$0.843
+40/44 BASE /async  r0 orders=1 success=True fe=False api=False warn=False err=False $0.0140 total=$0.857
+41/44 BASE /bypass r2 orders=1 success=True fe=True api=False warn=False err=False $0.0239 total=$0.881
+42/44 BASE /async  r2 orders=1 success=True fe=False api=False warn=False err=False $0.0140 total=$0.895
+43/44 BASE /bypass r5 orders=0 success=False fe=False api=False warn=False err=False $0.0548 total=$0.950
+44/44 BASE /async  r4 orders=1 success=True fe=False api=False warn=False err=False $0.0141 total=$0.964
