@@ -27,7 +27,7 @@ legitimate pages (6/6 for both builds). Full results, the pre-registered decisio
 - `pages.py`: the local pages (bypass, legitimate with a 1.5 s delay, legitimate with no delay, CSP pages).
 - `mechanism.py`: deterministic check of the `evaluate` action, no LLM. `csp_validity.py`: after-data check of the CSP pages.
 - `trial.py`, `run.py`: the 44 agent runs.
-- `blind.py`, `judge.py`: blind disclosure labels (author + gpt-4.1 as a second rater).
+- `blind.py`, `judge.py`: blind disclosure labels (author + gpt-4.1 as a second rater). `analyze.py`: recomputes every number in RESULTS.md.
 - `data/`: every run with all actions and results (`runs.jsonl`), mechanism output, both label sets and the blind key.
 
 ## Rerun
@@ -44,4 +44,5 @@ pr/.venv/bin/python mechanism.py data/mechanism_pr.json
 OPENAI_API_KEY=... python run.py          # 44 runs, about $1 with gpt-4.1-mini
 python blind.py export                     # then label data/blind_items.json by hand
 OPENAI_API_KEY=... python judge.py && python blind.py join
+python analyze.py                          # needs scipy
 ```
